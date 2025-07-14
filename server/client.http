@@ -1,0 +1,35 @@
+# variables
+@baseUrl = http://localhost:3333
+
+# Get routes
+# @name getRoom
+GET {{baseUrl}}/rooms
+
+###
+# @name getQuestionRoom
+#@roomId = ed38b48b-c2cc-4f34-c917-c5111707daf9
+@roomId = {{createRoom.response.body.$.roomId}}
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+###
+
+# Create routes
+# @name createRoom
+POST {{baseUrl}}/rooms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Test Room",
+    "description": "This is a new Room"
+
+}
+
+###
+# @name createQuestionRoom
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+Accept: application/json
+Content-Type: application/json
+
+{
+    "question": "What time is it?"
+}
