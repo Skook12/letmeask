@@ -5,6 +5,7 @@ A real-time Q&A application that allows users to create rooms, ask questions, an
 ## 🚀 Technologies Used
 
 ### Frontend (Web)
+
 - **React 19** - Modern React with latest features
 - **TypeScript** - Type-safe JavaScript development
 - **Vite** - Fast build tool and development server
@@ -19,6 +20,7 @@ A real-time Q&A application that allows users to create rooms, ask questions, an
 - **Biome** - Fast formatter and linter
 
 ### Backend (Server)
+
 - **Node.js** - JavaScript runtime
 - **Fastify** - Fast and low overhead web framework
 - **TypeScript** - Type-safe server development
@@ -30,6 +32,7 @@ A real-time Q&A application that allows users to create rooms, ask questions, an
 - **Biome** - Code formatting and linting
 
 ### Infrastructure
+
 - **Docker** - Containerization
 - **Docker Compose** - Multi-container orchestration
 
@@ -156,6 +159,7 @@ letmeask/
 ## 🔧 Available Scripts
 
 ### Backend Scripts
+
 - `npm run dev` - Start development server with auto-reload
 - `npm start` - Start production server
 - `npm run db:generate` - Generate database migrations
@@ -163,6 +167,7 @@ letmeask/
 - `npm run db:seed` - Seed database with initial data
 
 ### Frontend Scripts
+
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
@@ -185,10 +190,6 @@ letmeask/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the ISC License.
-
 ## 🆘 Support
 
-If you encounter any issues or have questions, please open an issue in the repository. 
+If you encounter any issues or have questions, please open an issue in the repository.
