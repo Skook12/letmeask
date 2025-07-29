@@ -23,21 +23,21 @@ export function Room() {
             <Link to="/">
               <Button variant="outline">
                 <ArrowLeft className="mr-2 size-4" />
-                Voltar ao Início
+                Go back
               </Button>
             </Link>
             <Link to={`/room/${params.roomId}/audio`}>
               <Button className="flex items-center gap-2" variant="secondary">
                 <Radio className="size-4" />
-                Gravar Áudio
+                Record audio
               </Button>
             </Link>
           </div>
           <h1 className="mb-2 font-bold text-3xl text-foreground">
-            Sala de Perguntas
+            Question room
           </h1>
           <p className="text-muted-foreground">
-            Faça perguntas e receba respostas com IA
+            Ask questions and get answers powered by AI
           </p>
         </div>
 

@@ -24,9 +24,9 @@ import { useCreateRoomsQuestions } from "@/http/use-create-room-questions";
 const createQuestionSchema = z.object({
   question: z
     .string()
-    .min(1, "Pergunta é obrigatória")
-    .min(10, "Pergunta deve ter pelo menos 10 caracteres")
-    .max(500, "Pergunta deve ter menos de 500 caracteres"),
+    .min(1, "Question is mandatory")
+    .min(10, "Question must be at least 10 characters long")
+    .max(500, "Question must be less than 500 characters"),
 });
 
 type CreateQuestionFormData = z.infer<typeof createQuestionSchema>;
@@ -53,9 +53,9 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Fazer uma Pergunta</CardTitle>
+        <CardTitle>Ask a question</CardTitle>
         <CardDescription>
-          Digite sua pergunta abaixo para receber uma resposta gerada por I.A.
+          Enter your question below to receive an AI-generated answer.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -69,12 +69,12 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
               name="question"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Sua Pergunta</FormLabel>
+                  <FormLabel>Your question</FormLabel>
                   <FormControl>
                     <Textarea
                       className="min-h-[100px]"
                       disabled={isSubmitting}
-                      placeholder="O que você gostaria de saber?"
+                      placeholder="What would you like to know?"
                       {...field}
                     />
                   </FormControl>
@@ -84,7 +84,7 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
             />
 
             <Button disabled={isSubmitting} type="submit">
-              Enviar pergunta
+              Send Question
             </Button>
           </form>
         </Form>
